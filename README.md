@@ -51,7 +51,30 @@ sudo docker image rm nome-da-imagem
 # Comandos básicos
 
 ## Verifica se possui imagem e inicia ela
-sudo docker image run -nome-da-imagem-
+sudo docker image run nome_da_imagem
 
 ## Baixar imagem do docker Hub
-sudo docker image pull -nome-da-imagem-
+sudo docker image pull nome_da_imagem
+
+## Lista imagens do Docker
+sudo docker image ls
+
+## Remover imagem
+sudo docker rm nome_da_tag_ou_id
+
+## Inspeciona tag com informações da imagem
+sudo docker inspect _nome_imagem_
+
+## Criar uma imagem com tag
+sudo docker image nome_da_imagem nome_da_tag
+
+## Constroi imagem a partir de arquivo "descritor"
+docker image build
+
+## Publica imagem no registry do docker
+docker image push 
+
+## Building Example
+## -t tag
+sudo docker image build -t ex-simple-build
+
