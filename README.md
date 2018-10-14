@@ -74,7 +74,34 @@ docker image build
 ## Publica imagem no registry do docker
 docker image push 
 
-## Building Example
-## -t tag
-sudo docker image build -t ex-simple-build
+# Building Example
+
+## Criando a imagem
+sudo docker image build -t ex-simple-build .
+
+## Excuta a imagem criada
+sudo docker container run -p 30:80 simple-build
+
+# Salvando imagem no Docker Hub
+
+## Fazendo Login
+sudo docker login --username=nome_usuario
+sudo docker image push nome_da_imagem:version
+
+
+<hr />
+<hr />
+
+# Tipos de Redes no Docker
+sudo docker network ls
+
+sudo docker container run -d --net none nome_imagem
+sudo docker container run -d --net host nome_imagem
+sudo docker container run -d --net bridge nome_imagem
+
+
+# Docker Compose
+## Gerenciamento de Containers
+
+
 
