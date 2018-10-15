@@ -101,7 +101,13 @@ sudo docker container run -d --net bridge nome_imagem
 
 
 # Docker Compose
-## Gerenciamento de Containers
 
+## Iniciando docker-compose em modo daemon
+sudo docker-compose up -d
 
+## Parando docker-compose
+sudo docker-compose down
+
+## Verificando "composers" que estão rodando
+sudo docker-compose ps
 
